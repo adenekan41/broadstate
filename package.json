@@ -1,0 +1,19 @@
+{
+  "name": "broad-state",
+  "version": "1.0.0",
+  "description": "A global state manager with useState and reacthooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adenekan41/broadstate.git"
+  },
+  "author": "Adenekan Wonderful",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adenekan41/broadstate/issues"
+  },
+  "homepage": "https://github.com/adenekan41/broadstate#readme"
+}
