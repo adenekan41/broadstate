@@ -2,9 +2,7 @@
 <p align="center">
   <img src="https://i.ibb.co/w465vbK/Frame-1broad.png"/>
 </p>
-<h2 align="center">
-  BroadState
-</h2>
+<h2 align="center"></h2>
 
 <p align="center">Easy state manager for state values from one component to the other with useState and React Hooks in < 1KB! </p>
 
