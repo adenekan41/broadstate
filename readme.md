@@ -2,13 +2,16 @@
 <p align="center">
   <img src="https://i.ibb.co/w465vbK/Frame-1broad.png"/>
 </p>
+<h2 align="center">
+  BroadState
+</h2>
 
 <p align="center">Easy state manager for state values from one component to the other with useState and React Hooks in < 1KB! </p>
 
 <br />
 <br />
 <h1>
-  <img src="https://i.ibb.co/gVqCCky/Broadstate.png" width="200"/>
+  <img src="https://i.ibb.co/gVqCCky/Broadstate.png" width="160"/>
 </h1>
 
 [![npm](https://badge.fury.io/js/broad-state.svg)](https://www.npmjs.com/package/broad-state)
@@ -19,7 +22,7 @@
 
 ### [See Demo On Codesandbox](https://codesandbox.io/s/broad-state-pb971?file=/src/App.js)
 
-## Overview
+## ⚡️Overview
 
 Have you ever tried to move the value of a state from a child to the parent
 without using large state managment tools like Redux, Mobx e.t.c ?. Broadstate
@@ -84,7 +87,7 @@ export default function App() {
 }
 ```
 
-## Thought Process
+## 🤔Thought Process
 
 broadstate is built on top of React Hooks. I first tried this concept in a
 project i was working on and seeing the re-usability and convenience, I decided
