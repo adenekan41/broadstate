@@ -1,12 +1,12 @@
 /**
  * createObeservable
  * @function
- * @param {any} target
+ * @param {any} initialData
  * @returns {Object}
  */
-const createObservable = target => {
+const createObservable = initialData => {
   let listeners = [];
-  let value = target;
+  let value = initialData;
 
   // get Observed value
   const get = () => {
@@ -20,7 +20,7 @@ const createObservable = target => {
   const set = newValue => {
     if (value === newValue) return;
     value = newValue;
-    listeners.forEach(l => l(value));
+    listeners.forEach(listener => listener(value));
   };
 
   /**
@@ -28,7 +28,7 @@ const createObservable = target => {
    * @param {Function} listenerFunc
    */
   const unsubscribe = listenerFunc => {
-    listeners = listeners.filter(l => l !== listenerFunc);
+    listeners = listeners.filter(listener => listener !== listenerFunc);
   };
 
   /**
