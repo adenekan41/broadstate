@@ -87,7 +87,7 @@ export default function App() {
 
 ## 🤔Thought Process
 
-broadstate is built on top of React Hooks. I first tried this concept in a
+Broadstate is built on top of React Hooks. I first tried this concept in a
 project i was working on and seeing the re-usability and convenience, I decided
 to convert it to a standalone open-source library for others to benefit from the
 awesomeness of React Hooks.
