@@ -6,7 +6,8 @@ import { terser } from 'rollup-plugin-terser';
 
 export default {
   external: ['react'],
-  input: ['src/**/*.js', 'src/core/**/*.js'],
+  input: ['src/**/*.js'],
+
   output: [
     {
       dir: 'bundle-es',
@@ -14,11 +15,15 @@ export default {
       name: 'bundle',
       plugins: [
         terser({
-          include: ['core/**/*.js'],
+          include: ['src/**/*.js'],
           exclude: ['index.js'],
         }),
       ],
+      globals: {
+        react: 'React',
+      },
     },
+
     {
       dir: 'bundle-cjs',
       format: 'cjs',
@@ -26,7 +31,7 @@ export default {
       name: 'bundle',
       plugins: [
         terser({
-          include: ['core/**/*.js'],
+          include: ['src/**/*.js'],
           exclude: ['index.js'],
         }),
       ],
@@ -38,7 +43,7 @@ export default {
       exports: 'named',
       plugins: [
         terser({
-          include: ['core/**/*.js'],
+          include: ['src/**/*.js'],
           exclude: ['index.js'],
         }),
       ],
