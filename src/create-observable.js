@@ -1,8 +1,10 @@
 /**
- * createObeservable
- * @function
- * @param {any} initialData
- * @returns {Object}
+ * Create a value with the desired type to allow use
+ * to observe and update the value
+ *
+ * @template T
+ * @param {(any<T> | unknown<T>)} initialData - Create a value with any data type
+ * @returns {Object} get, set, subscribe
  */
 const createObservable = initialData => {
   let listeners = [];
@@ -14,8 +16,11 @@ const createObservable = initialData => {
   };
 
   /**
-   * Set Observable Value
-   * @param {any} newValue
+   * Create a setter for the observed value so we can later
+   * on subcribe to that value
+   *
+   * @param {any<T>} newValue  - Fresh new value to be updated
+   * @returns {void}
    */
   const set = newValue => {
     if (value === newValue) return;
@@ -33,7 +38,9 @@ const createObservable = initialData => {
 
   /**
    * Subscribe to global listener
+   *
    * @param {Function} listenerFunc
+   * @returns {Function} returns the unsubscribed value
    */
   const subscribe = listenerFunc => {
     listeners.push(listenerFunc);

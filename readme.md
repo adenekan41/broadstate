@@ -53,10 +53,10 @@ $ npm install --save broad-state
 ## 📖 Usage
 
 Some usage terms you need to be familar with – `createObservable`,
-`useBoradState`
+`useBroadState`
 
 - _createObservable_, takes in the central state you need to be observed,
-- _useBoradState_, hooks that handle reading state and dispatching actions
+- _useBroadState_, hooks that handle reading state and dispatching actions
 
 Here is a simple example
 
