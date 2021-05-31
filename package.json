@@ -1,7 +1,7 @@
 {
   "name": "broad-state",
   "license": "MIT",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "repository": "git://github.com/adenekan41/broadstate.git",
   "description": "A global state manager with useState and react hooks",
   "author": "Adenekan Wonderful <hellocodewonders@gmail.com> (https://codewonders.dev)",

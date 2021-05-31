@@ -11,9 +11,7 @@ const createObservable = initialData => {
   let value = initialData;
 
   // get Observed value
-  const get = () => {
-    return value;
-  };
+  const get = () => value;
 
   /**
    * Create a setter for the observed value so we can later
@@ -23,7 +21,11 @@ const createObservable = initialData => {
    * @returns {void}
    */
   const set = newValue => {
+    /**
+     * throw and early return if former value is equals to the new value
+     */
     if (value === newValue) return;
+
     value = newValue;
     listeners.forEach(listener => listener(value));
   };
