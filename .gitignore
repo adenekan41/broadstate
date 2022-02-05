@@ -56,8 +56,7 @@ jspm_packages/
 
 # dotenv environment variables file
 .env
+.DS_Store
 
 # next.js build output
-bundle-es/
-bundle-cjs/
-bundle-umd/
+dist
