@@ -9,12 +9,14 @@ import useBroadState from '../src/use-broad';
 function setup(...args) {
   const returnVal = {};
   let set;
+
   function TestComponent() {
     const [state, setState] = useBroadState(...args);
     Object.assign(returnVal, state);
     set = setState;
     return null;
   }
+
   render(<TestComponent />);
 
   return [returnVal, set];
