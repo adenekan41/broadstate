@@ -1,7 +1,7 @@
 {
   "name": "broad-state",
   "license": "MIT",
-  "version": "1.1.7",
+  "version": "1.2.0",
   "repository": "git://github.com/adenekan41/broadstate.git",
   "description": "A global state manager with useState and react hooks",
   "author": "Adenekan Wonderful <hellocodewonders@gmail.com> (https://codewonders.dev)",
@@ -23,7 +23,7 @@
     "build:patch": "npm version patch && git push origin master && npm publish"
   },
   "homepage": "https://github.com/adenekan41/broadstate#readme",
-  "devDependencies": {    
+  "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
     "@rollup/plugin-typescript": "^8.3.0",
