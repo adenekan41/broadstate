@@ -9,4 +9,4 @@
 
 export { default as useBroadState } from './use-broad';
 export { default as useMount } from './use-mount';
-export { default as createObservable } from './create-observable';
+export { default as createObservable, Observable } from './create-observable';
